@@ -25,6 +25,6 @@ app testing more accurate, affordable, and scalable.
 
 ### Measurement Code and Data
 
-We are currently preparing the code and data of this study for public release, and it will take one to two more days.
+We are currently preparing the code and data of this study for public release, and it will take one to two days if things go smoothly.
 
 The measurement code and data involved in our study will be released [here](https://github.com/Android-Emulation-Testing/measurement-data).
