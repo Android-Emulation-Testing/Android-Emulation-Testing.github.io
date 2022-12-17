@@ -2,13 +2,18 @@
 ![license](https://img.shields.io/badge/Version-Beta-yellow "Version")
 ![license](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg "Apache")
 
-### Table of Contents
+## Table of Contents
+- [Table of Contents](#table-of-contents)
 - [About this Study](#about-this-study)
 - [Code and Data Release](#code-and-data-release)
   - [Code Release](#code-release)
+    - [Measurement Code](#measurement-code)
+    - [Enhancements](#enhancements)
   - [Data Release](#data-release)
+    - [Measurement Data](#measurement-data)
+    - [Data Format](#data-format)
 
-### About this Study
+## About this Study
 
 This paper conducts a systematic and rigorous study on
 emulation-based mobile app testing, as motivated by its huge
@@ -25,20 +30,22 @@ levels. We hope that our infrastructure, insights, and enhancements
 will foster a more viable mobile ecosystem by making
 app testing more accurate, affordable, and scalable.
 
-### Code and Data Release
+## Code and Data Release
 
 We are currently preparing the code and data of this study for public release, and it will take one to two days if things go smoothly.
 
 The code and data involved in our study will be released in [this github repository](https://github.com/Android-Emulation-Testing/code-and-data).
 
-#### Code Release
+### Code Release
 
- * Measurement Code
- * Enhancements
+#### Measurement Code
+
+#### Enhancements
 
 We have provided the enhancements in Section 6 of our paper in the [`enhancements`](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/enhancements) folder.
 
-#### Data Release
+### Data Release
 
- * Measurement Data
- * Data Format
+#### Measurement Data
+
+#### Data Format
