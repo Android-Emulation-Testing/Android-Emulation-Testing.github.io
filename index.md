@@ -52,6 +52,7 @@ We have provided the a portion of the measurement data (with proper anonymizatio
 #### Data Format
 
 The attributes of each failure event are organized as follows:
+
 |  Attribute   | Description  |
 |  ----  | ----  |
 | error  | The triggered Exception/Signal of the failure. |
