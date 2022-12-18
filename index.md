@@ -47,4 +47,17 @@ We have provided the enhancements in Section 6 of our paper in the [`enhancement
 
 #### Measurement Data
 
+We have provided the a portion of the measurement data (with proper anonymization) of failure events in the ['data'](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/data) folder. As to the full dataset, we are still in discussion with the authority to what extend can it be released.
+
 #### Data Format
+
+The attributes of each failure event are organized as follows:
+|  Attribute   | Description  |
+|  ----  | ----  |
+| error  | The triggered Exception/Signal of the failure. |
+| scene  | A brief summary of the failure scene with anonymization. |
+| os_version  | The Android version. |
+| device_brand  | The device brand. |
+| device_model  | The device model. |
+| device_type  | The type of the device. Specifically, `physical` denotes a physical device and `virtrualized` denotes a virtrualized device. |
+| failure_layer  | The layer in which the failure occurred. Specifically, `java` and `native` denote that the failure occurred in the Java or the native layer, respectively. 
