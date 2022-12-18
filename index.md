@@ -47,7 +47,7 @@ We have provided the enhancements in Section 6 of our paper in the [`enhancement
 
 #### Measurement Data
 
-We have provided the a portion of the measurement data (with proper anonymization) of failure events in the ['data'](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/data) folder. As to the full dataset, we are still in discussion with the authority to what extend can it be released.
+We have provided the a portion of the measurement data (with proper anonymization) of failure events in the [`data`](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/data) folder. As to the full dataset, we are still in discussion with the authority to what extend can it be released.
 
 #### Data Format
 
