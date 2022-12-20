@@ -1,3 +1,5 @@
+## High-Fidelity Mobile App Testing on Virtualized Devices at Scale
+
 ![license](https://img.shields.io/badge/Platform-Android-green "Android")
 ![license](https://img.shields.io/badge/Version-Beta-yellow "Version")
 ![license](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg "Apache")
@@ -9,7 +11,6 @@
     - [Measurement Code](#measurement-code)
     - [Enhancements](#enhancements)
   - [Data Release](#data-release)
-    - [Measurement Data](#measurement-data)
     - [Data Format](#data-format)
 
 ## About this Study
@@ -41,13 +42,12 @@ The code and data involved in our study will be released in [this github reposit
 
 #### Enhancements
 
-We have provided the enhancements in Section 6 of our paper in the [`enhancements`](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/enhancements) folder.
+We have provided the source code in the enhancements section of our paper in the [`enhancements` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/enhancements).
 
 ### Data Release
 
-#### Measurement Data
-
-We have provided the a portion of the measurement data (with proper anonymization) of failure events in the [`data`](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/data) folder. As to the full dataset, we are still in discussion with the authority to what extend can it be released.
+We have provided in part the measurement data (with proper anonymization) in the [`data` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/data). 
+We will release the full dataset as soon as we obtain authorization from the relevant authorities.
 
 #### Data Format
 
@@ -55,10 +55,10 @@ The attributes of each failure event are organized as follows:
 
 |  Attribute   | Description  |
 |  ----  | ----  |
-| error  | The triggered Exception/Signal of the failure. |
-| scene  | A brief summary of the failure scene with anonymization. |
-| os_version  | The Android version. |
-| device_brand  | The device brand. |
-| device_model  | The device model. |
-| device_type  | The type of the device. Specifically, `physical` denotes a physical device and `virtrualized` denotes a virtrualized device. |
-| failure_layer  | The layer in which the failure occurred. Specifically, `java` and `native` denote that the failure occurred in the Java or the native layer, respectively. 
+| error  | The triggered exception/signal of the failure. |
+| scene  | A brief summary of the anonymized failure scene. |
+| os_version  | The Android version of the device producing the failure. |
+| device_brand  | The brand of the device producing the failure. |
+| device_model  | The model of the device producing the failure. |
+| device_type  | The type of the device. Specifically, `physical` denotes a physical device and `virtualized` denotes a virtualized device. |
+| failure_layer  | The layer in which the failure occurred. Specifically, `java` and `native` denote that the failure occurred in the Java or the native layer, respectively. |
