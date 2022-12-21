@@ -3,7 +3,6 @@
 ![license](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg "Apache")
 
 ## Table of Contents
-- [Table of Contents](#table-of-contents)
 - [About this Study](#about-this-study)
 - [Code and Data Release](#code-and-data-release)
   - [Code Release](#code-release)
