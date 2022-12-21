@@ -3,6 +3,7 @@
 ![license](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg "Apache")
 
 ## Table of Contents
+- [Table of Contents](#table-of-contents)
 - [About this Study](#about-this-study)
 - [Code and Data Release](#code-and-data-release)
   - [Code Release](#code-release)
@@ -36,11 +37,18 @@ The code and data involved in our study are provided in [this github repository]
 
 #### Failure Scene Capture
 
-We have provided the source code of the failure scene capture mechanisms mentioned in our paper in the [`capture` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/capture).
+To effectively capture failure scene, we propose a considerate method that combines content-aware memory image pruning with failsafe data collection.
+We have provided the source code of the failure scene capture mechanisms in the [`capture` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/capture).
 
 #### Enhancements
 
-We have provided the source code of the enhancements mentioned in our paper in the [`enhancements` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/enhancements).
+In order to effectively enhance the testing fidelity on virtualized devices, we have devised threefold enhancements that eliminate most of the failure discrepancies in reality:
+
+ * Graphics Resource Format Extension
+ * Background Management Strategy Adaptation
+ * Dynamic Binary Patching
+
+We have provided the source code of the above enhancements in the [`enhancements` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/enhancements).
 
 ### Data Release
 
@@ -49,6 +57,8 @@ We will release the full dataset as soon as we obtain official approval of the r
 
 #### Data Format
 
+The data file is organized in `.csv` format. 
+Each row corresponds to a failure event.
 The attributes of each failure event are organized as follows:
 
 |  Attribute   | Description  |
