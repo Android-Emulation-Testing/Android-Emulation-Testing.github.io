@@ -3,6 +3,7 @@
 ![license](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg "Apache")
 
 ## Table of Contents
+- [Table of Contents](#table-of-contents)
 - [About this Study](#about-this-study)
 - [Code and Data Release](#code-and-data-release)
   - [Code Release](#code-release)
@@ -36,7 +37,7 @@ The code and data involved in our study are provided in [this github repository]
 
 #### Failure Scene Capture
 
-We have provided the source code of captureing failure scene mentioned in our paper in the [`capture` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/capture).
+We have provided the source code of the failure scene capture mechanisms mentioned in our paper in the [`capture` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/capture).
 
 #### Enhancements
 
