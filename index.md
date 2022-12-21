@@ -36,7 +36,7 @@ The code and data involved in our study are provided in [this github repository]
 
 #### Failure Scene Capture
 
-We have gained authorization of the relevant authorities and will release the source code in one or two days.
+We have provided the source code of captureing failure scene mentioned in our paper in the [`capture` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/capture).
 
 #### Enhancements
 
