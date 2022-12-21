@@ -1,5 +1,3 @@
-## High-Fidelity Mobile App Testing on Virtualized Devices at Scale
-
 ![license](https://img.shields.io/badge/Platform-Android-green "Android")
 ![license](https://img.shields.io/badge/Version-Beta-yellow "Version")
 ![license](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg "Apache")
@@ -8,7 +6,7 @@
 - [About this Study](#about-this-study)
 - [Code and Data Release](#code-and-data-release)
   - [Code Release](#code-release)
-    - [Measurement Code](#measurement-code)
+    - [Failure Scene Capture](#failure-scene-capture)
     - [Enhancements](#enhancements)
   - [Data Release](#data-release)
     - [Data Format](#data-format)
@@ -32,22 +30,22 @@ app testing more accurate, affordable, and scalable.
 
 ## Code and Data Release
 
-We are currently preparing the code and data of this study for public release, and it will take one to two days if things go smoothly.
-
-The code and data involved in our study will be released in [this github repository](https://github.com/Android-Emulation-Testing/code-and-data).
+The code and data involved in our study are provided in [this github repository](https://github.com/Android-Emulation-Testing/code-and-data).
 
 ### Code Release
 
-#### Measurement Code
+#### Failure Scene Capture
+
+We have gained authorization of the relevant authorities and will release the source code in one or two days.
 
 #### Enhancements
 
-We have provided the source code in the enhancements section of our paper in the [`enhancements` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/enhancements).
+We have provided the source code of the enhancements mentioned in our paper in the [`enhancements` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/enhancements).
 
 ### Data Release
 
 We have provided in part the measurement data (with proper anonymization) in the [`data` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/data). 
-We will release the full dataset as soon as we obtain authorization from the relevant authorities.
+We will release the full dataset as soon as we obtain official approval of the relevant authorities.
 
 #### Data Format
 
