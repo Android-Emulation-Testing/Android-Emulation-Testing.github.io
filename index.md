@@ -22,11 +22,11 @@ We hope that our infrastructure, insights, and enhancements will foster a more v
 
 ## Code and Data Release
 
-The code and data involved in our study are provided in [this github repository](https://github.com/Android-Emulation-Testing/code-and-data).
+The code and data involved in our study are provided in [this github repository](https://github.com/Android-Emulation-Testing/Code-and-Data-Release).
 They are organized as follows.
 
 ```
-Code and Data
+Code-and-Data-Release
 |---- Enhancements
       |---- Background Management Strategy Adaptation
       |---- Dynamic Binary Patching
@@ -40,7 +40,7 @@ Code and Data
 #### Failure Scene Capture
 
 To effectively capture failure scenes, we propose a considerate method that combines content-aware memory image pruning with failsafe data collection.
-We have provided the source code of the failure scene capture mechanisms in the [`capture` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/capture).
+We have provided the source code of the failure scene capture mechanisms in the [`Failure Scene Capture` folder](https://github.com/Android-Emulation-Testing/Code-and-Data-Release/tree/main/Failure%20Scene%20Capture).
 
 #### Enhancements
 
@@ -50,11 +50,11 @@ In order to effectively enhance the testing fidelity on virtualized devices, we 
  * Background Management Strategy Adaptation
  * Dynamic Binary Patching
 
-We have provided the source code of the above enhancements in the [`enhancements` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/enhancements).
+We have provided the source code of the above enhancements in the [`Enhancements` folder](https://github.com/Android-Emulation-Testing/Code-and-Data-Release/tree/main/Enhancements).
 
 ### Data Release
 
-We have provided in part the measurement data (with proper anonymization) in the [`data` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/data). 
+We have provided in part the measurement data (with proper anonymization) in the [`Measurement data` folder](https://github.com/Android-Emulation-Testing/Code-and-Data-Release/tree/main/Measurement%20Data). 
 We will release the full dataset as soon as we obtain official approval of the relevant authorities.
 
 #### Data Format
