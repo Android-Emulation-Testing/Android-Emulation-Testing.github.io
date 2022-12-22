@@ -14,29 +14,32 @@
 ## About this Study
 
 This paper conducts a systematic and rigorous study on
-emulation-based mobile app testing, as motivated by its huge
-advantages compared to testing apps on physical devices.
-Leveraging a custom-built virtualized testing infrastructure
-with its physical counterpart, we identify the key aspects contributing
-to test result discrepancies to be specific system
-add-ons and corrupted regional ecosystems, rather than commonly
-believed factors such as heterogeneous hardware and
-general customizations. These findings lead to practical solutions
-that boost the testing fidelity by effectively managing
-conflicts among stakeholders at both the emulator and app
-levels. We hope that our infrastructure, insights, and enhancements
-will foster a more viable mobile ecosystem by making
-app testing more accurate, affordable, and scalable.
+emulation-based mobile app testing, as motivated by its huge advantages compared to testing apps on physical devices.
+Leveraging a custom-built virtualized testing infrastructure with its physical counterpart, we identify the key aspects contributing to test result discrepancies to be specific system add-ons and corrupted regional ecosystems, rather than commonly
+believed factors such as heterogeneous hardware and general customizations. 
+These findings lead to practical solutions that boost the testing fidelity by effectively managing conflicts among stakeholders at both the emulator and app levels.
+We hope that our infrastructure, insights, and enhancements will foster a more viable mobile ecosystem by making app testing more accurate, affordable, and scalable.
 
 ## Code and Data Release
 
 The code and data involved in our study are provided in [this github repository](https://github.com/Android-Emulation-Testing/code-and-data).
+They are organized as follows.
+
+```
+Code and Data
+|---- Enhancements
+      |---- Background Management Strategy Adaptation
+      |---- Dynamic Binary Patching
+      |---- Graphics Resource Format Extension
+|---- Failure Scene Capture
+|---- Measurement data
+```
 
 ### Code Release
 
 #### Failure Scene Capture
 
-To effectively capture failure scene, we propose a considerate method that combines content-aware memory image pruning with failsafe data collection.
+To effectively capture failure scenes, we propose a considerate method that combines content-aware memory image pruning with failsafe data collection.
 We have provided the source code of the failure scene capture mechanisms in the [`capture` folder](https://github.com/Android-Emulation-Testing/code-and-data/tree/main/capture).
 
 #### Enhancements
