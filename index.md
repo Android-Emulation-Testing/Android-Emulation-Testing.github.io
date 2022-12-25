@@ -32,7 +32,7 @@ Code-and-Data-Release
       |---- Dynamic Binary Patching
       |---- Graphics Resource Format Extension
 |---- Failure Scene Capture
-|---- Measurement data
+|---- Measurement Data
 ```
 
 ### Code Release
@@ -46,9 +46,9 @@ We have provided the source code of the failure scene capture mechanisms in the 
 
 In order to effectively enhance the testing fidelity on virtualized devices, we have devised threefold enhancements that eliminate most of the failure discrepancies in reality:
 
- * Graphics Resource Format Extension
- * Background Management Strategy Adaptation
- * Dynamic Binary Patching
+* Background Management Strategy Adaptation
+* Dynamic Binary Patching
+* Graphics Resource Format Extension
 
 We have provided the source code of the above enhancements in the [`Enhancements` folder](https://github.com/Android-Emulation-Testing/Code-and-Data-Release/tree/main/Enhancements).
 
