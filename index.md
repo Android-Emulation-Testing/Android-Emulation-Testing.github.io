@@ -27,11 +27,11 @@ They are organized as follows.
 
 ```
 Code-and-Data-Release
+|---- Failure Scene Capture
 |---- Enhancements
       |---- Background Management Strategy Adaptation
       |---- Dynamic Binary Patching
       |---- Graphics Resource Format Extension
-|---- Failure Scene Capture
 |---- Measurement Data
 ```
 
@@ -54,7 +54,7 @@ We have provided the source code of the above enhancements in the [`Enhancements
 
 ### Data Release
 
-We have provided in part the measurement data (with proper anonymization) in the [`Measurement data` folder](https://github.com/Android-Emulation-Testing/Code-and-Data-Release/tree/main/Measurement%20Data). 
+We have provided in part the measurement data (with proper anonymization) in the [`Measurement Data` folder](https://github.com/Android-Emulation-Testing/Code-and-Data-Release/tree/main/Measurement%20Data). 
 We will release the full dataset as soon as we obtain official approval of the relevant authorities.
 
 #### Data Format
