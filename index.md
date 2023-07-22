@@ -1,16 +1,12 @@
 ![license](https://img.shields.io/badge/Platform-Android-green "Android")
 ![license](https://img.shields.io/badge/Version-Beta-yellow "Version")
-![license](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg "Apache")
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Table of Contents
 - [About this Study](#about-this-study)
-- [Code and Data Release](#code-and-data-release)
-  - [Code Release](#code-release)
-    - [Failure Scene Capture](#failure-scene-capture)
-    - [Enhancements](#enhancements)
-    - [Failure Discrepancy Report](#failure-discrepancy-report)
-  - [Data Release](#data-release)
+- [Artifact Release](#artifact-release)
     - [Data Format](#data-format)
+- [Failure Discrepancy Report](#failure-discrepancy-report)
 
 ## About this Study
 
@@ -30,42 +26,34 @@ levels. We hope that our infrastructure, experiences, and enhancements
 will foster a more viable mobile ecosystem by
 making app testing more accurate, affordable, and scalable.
 
-## Code and Data Release
+## Artifact Release
 
-The code and data involved in our study are provided in [this github repository](https://github.com/Android-Emulation-Testing/Code-and-Data-Release).
-They are organized as follows.
+We have released the anonymized failure data associated with our paper in [this github repository](https://github.com/Android-Emulation-Testing/emu-fidelity-ae).
 
-```
-Code-and-Data-Release
-|---- Failure Scene Capture
-|---- Enhancements
-      |---- Graphics Resource Format Extension
-      |---- Background Management Strategy Adaptation
-      |---- Dynamic Binary Patching
-|---- Measurement Data
-```
+The anonymized failure data are collected from our physical and device farms over a three-month period.
+The failure data involves 5,918 physical devices as well as 5,918 virtualized devices running on ARM commodity servers.
 
-### Code Release
+### Data Format
 
-#### Failure Scene Capture
+The data file is organized in `.csv` format. 
+Each row represents a single failure scene, and detailed information (i.e. call stacks, device information) about the scenes is provided, in the format described in the table below.
 
-To effectively capture failure scenes, we propose a considerate method that combines content-aware memory image pruning with failsafe data collection.
-We have provided the source code of the failure scene capture mechanisms in the [`Failure Scene Capture` folder](https://github.com/Android-Emulation-Testing/Code-and-Data-Release/tree/main/Failure%20Scene%20Capture).
+| Column | Description | Example |
+| ------ | ----------- | ------- |
+| error | The triggered exception/signal of the failure | java.lang.NullPointerException |
+| reason | The descriptive message printed after the error | must not be null |
+| stack_frame | The call stack of the failure | [{'file': 'app.java', 'method': 'badMethod()', 'line_number': '10'}] |
+| thread_name | The name of the thread at fault | thread-1 |
+| failure_time | The unix timestamp at which the failure occurs, in seconds | 1640966505.0 |
+| app_id | The id of the failing app. They correspond to Table 1 of our paper. | 1 |
+| app_version | The version of the app, denoted by the date they are tested in our device farm. | 2022-01-01 |
+| device_brand | The brand of the failing device. For virtualized devices this is the brand of its physical device pair. | samsung |
+| device_model | The device model of the failing device. The model for our virtualized devices is 'virt'. | samsung-model-1 |
+| android_version | The android version of the device. | 10.0 |
 
-#### Enhancements
+## Failure Discrepancy Report
 
-In order to effectively enhance the testing fidelity on virtualized devices, we have devised threefold enhancements that eliminate most of the failure discrepancies in reality:
-
- * Graphics Resource Format Extension
- * Background Management Strategy Adaptation
- * Dynamic Binary Patching
-
-For each enhancement, we have released our source code as well as a detailed `README.md` document.
-For more information, please consult the [`Enhancements` folder](https://github.com/Android-Emulation-Testing/Code-and-Data-Release/tree/main/Enhancements).
-
-#### Failure Discrepancy Report
-
-We have reported the root causes and solutions of the failure discrepancies to all the corresponding stakeholders, including phone vendors (e.g., Huawei, Honor, and Meizu) and hardware manufacturers (e.g., MediaTek).
+We have reported the root causes and solutions of the failure discrepancies mentioned in our paper to all the corresponding stakeholders, including phone vendors (e.g., Huawei, Honor, and Meizu) and hardware manufacturers (e.g., MediaTek).
 The complete list of our reported failures is provided below.
 
 | Index | Stakeholder | Description | Current State |
@@ -78,24 +66,3 @@ The complete list of our reported failures is provided below.
 | 6     | MediaTek | Errors in MediaTek’s GPU drivers | Confirmed |
 | 7     | Samsung | Array index out of bounds in vendor modules | Confirmed |
 | 8     | Google | Graphics resource format inconsistency | [Confirmed](https://issuetracker.google.com/issues/262255458) |
-
-### Data Release
-
-To benefit the community, we have provided in part the measurement data (with proper anonymization) in the [`Measurement Data` folder](https://github.com/Android-Emulation-Testing/Code-and-Data-Release/tree/main/Measurement%20Data). 
-We will release the full dataset as soon as we obtain official approval of the relevant authorities.
-
-#### Data Format
-
-The data file is organized in `.csv` format. 
-Each row corresponds to a failure event.
-The attributes of each failure event are organized as follows:
-
-|  Attribute   | Description  |
-|  ----  | ----  |
-| error  | The triggered exception/signal of the failure. |
-| scene  | A brief summary of the anonymized failure scene. |
-| os_version  | The Android version of the device producing the failure. |
-| device_brand  | The brand of the device producing the failure. |
-| device_model  | The model of the device producing the failure. |
-| device_type  | The type of the device. Specifically, `physical` denotes a physical device and `virtualized` denotes a virtualized device. |
-| failure_layer  | The layer in which the failure occurred. Specifically, `java` and `native` denote that the failure occurred in the Java or the native layer, respectively. |
