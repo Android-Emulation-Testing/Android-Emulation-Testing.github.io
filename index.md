@@ -65,4 +65,4 @@ The complete list of our reported failures is provided below.
 | 5     | Smartisan | Incorrect handling of page faults in the FUSE filesystem | Confirmed & Fixed |
 | 6     | MediaTek | Errors in MediaTek’s GPU drivers | Confirmed |
 | 7     | Samsung | Array index out of bounds in vendor modules | Confirmed |
-| 8     | Google | Graphics resource format inconsistency | [Confirmed](https://issuetracker.google.com/issues/262255458) |
+| 8     | Google | Graphics resource format inconsistency | [Confirmed & Fixed](https://issuetracker.google.com/issues/262255458) |
