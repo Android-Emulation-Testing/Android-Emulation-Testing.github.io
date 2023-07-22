@@ -40,6 +40,7 @@ Each row represents a single failure scene, and detailed information (i.e. call 
 
 | Column | Description | Example |
 | ------ | ----------- | ------- |
+| type | A number that labels failure type. Failures that belong to the same type have the same number. | 1 |
 | error | The triggered exception/signal of the failure | java.lang.NullPointerException |
 | reason | The descriptive message printed after the error | must not be null |
 | stack_frame | The call stack of the failure | [{'file': 'app.java', 'method': 'badMethod()', 'line_number': '10'}] |
